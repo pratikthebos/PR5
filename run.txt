@@ -1,0 +1,59 @@
+PR1
+
+cd
+cd  PR1
+lex  try.l
+cc  lex.yy.c  -ll
+./a.out
+
+Input :
+6
+
+
+PR2
+
+cd
+cd  PR2
+lex  program2.l
+cc   lex.yy.c  -ll
+./a.out  input
+
+Input:-
+
+12122
+
+
+PR3
+
+cd
+cd  PR3
+lex  program3.l
+gcc  lex.yy.c  y.tab.c  -w
+./a.out
+
+Input :
+1+2*5
+
+
+PR4
+
+cd
+cd PR4
+yacc  -d  cfg.y
+cc  lex.yy.c  y.tab.c  -ll
+./a.out
+
+Input :
+000111
+
+
+PR5
+
+cd
+cd PR5
+yacc  -d   program5.y
+gcc  lex.yy.c.  y.tab.c  -w
+./a.out
+
+Input:
+a=b*c+1/3-5*f;
